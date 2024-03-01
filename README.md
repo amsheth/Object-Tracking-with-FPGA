@@ -26,7 +26,7 @@ Realtime tracking was enabled by the MedianFlow tracker in OpenCV using frames c
 
 The below diagram taken from the ECE 437 Canvas page for Lab 9 displays the hardware instantiated in Verilog for the transfer of CMV300 frames to Python.
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.002.jpeg)
+![](ECE 437 Final Report/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.002.jpeg)
 
 **Python and OpenCV tracking**
 
