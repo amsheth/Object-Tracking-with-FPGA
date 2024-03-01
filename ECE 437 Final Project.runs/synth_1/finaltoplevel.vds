@@ -1,0 +1,1344 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec  8 17:00:25 2023
+# Process ID: 20940
+# Current directory: U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.runs/synth_1
+# Command line: vivado.exe -log finaltoplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finaltoplevel.tcl
+# Log file: U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.runs/synth_1/finaltoplevel.vds
+# Journal file: U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.runs/synth_1\vivado.jou
+# Running On: ECEB-4022-09, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 33554 MB
+#-----------------------------------------------------------
+source finaltoplevel.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/utils_1/imports/synth_1/finaltoplevel.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/utils_1/imports/synth_1/finaltoplevel.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top finaltoplevel -part xc7a75tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3024
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:72]
+INFO: [Synth 8-11241] undeclared symbol 'SPI_STATE', assumed default net type 'wire' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:144]
+WARNING: [Synth 8-8895] 'clk' is already implicitly declared on line 72 [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:251]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1862.973 ; gain = 408.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finaltoplevel' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Transmit' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/ECE437/Lab 5 I2C/Lab 5.srcs/sources_1/imports/Downloads/I2C_Transmit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/ECE437/Lab 5 I2C/Lab 5.srcs/sources_1/imports/Downloads/I2C_Transmit.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Transmit' (0#1) [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/ECE437/Lab 5 I2C/Lab 5.srcs/sources_1/imports/Downloads/I2C_Transmit.v:3]
+WARNING: [Synth 8-7071] port 'I2C_State' of module 'I2C_Transmit' is unconnected for instance 'I2C_Test1' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:70]
+WARNING: [Synth 8-7023] instance 'I2C_Test1' of module 'I2C_Transmit' has 16 connections declared, but only 15 given [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:70]
+INFO: [Synth 8-6157] synthesizing module 'spi_toplevel' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/new/spi.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ClockGenerator' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Downloads/ClockGenerator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+INFO: [Synth 8-6155] done synthesizing module 'ClockGenerator' (0#1) [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Downloads/ClockGenerator.v:3]
+WARNING: [Synth 8-6104] Input port 'CVM300_SPI_OUT' has an internal driver [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/new/spi.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'spi_toplevel' (0#1) [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/new/spi.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'State' does not match port width (8) of module 'spi_toplevel' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:144]
+INFO: [Synth 8-6157] synthesizing module 'motor_controller' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/ECE437/Lab 7 Motor/Lab 5.srcs/sources_1/new/motor_controller.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'motor_controller' (0#1) [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/ECE437/Lab 7 Motor/Lab 5.srcs/sources_1/new/motor_controller.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'okHost' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:10]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71820]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71820]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79972]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 9.920000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 54.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79972]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/Vivado-2021/okLibrary.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:39687]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:39687]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:135335]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:135335]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized6' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized6' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized7' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized7' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized8' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized8' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized9' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized9' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized10' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized10' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized32' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized11' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized11' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized12' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized12' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized33' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized13' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized13' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized34' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized3' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized14' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized14' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized35' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized35' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6157] synthesizing module 'FDSE__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized36' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized36' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized37' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized37' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized38' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized38' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized6' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized7' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized8' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized8' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized39' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized40' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'dna' of module 'okHost' is unconnected for instance 'hostIF' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:179]
+WARNING: [Synth 8-7071] port 'dna_valid' of module 'okHost' is unconnected for instance 'hostIF' [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:179]
+WARNING: [Synth 8-7023] instance 'hostIF' of module 'okHost' has 9 connections declared, but only 7 given [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:179]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:316]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:355]
+WARNING: [Synth 8-3848] Net led in module/entity spi_toplevel does not have driver. [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/imports/new/spi.v:2]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:355]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi'. This will prevent further optimization [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:138]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'motor'. This will prevent further optimization [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:163]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:322]
+WARNING: [Synth 8-3848] Net CVM300_SYS_RES_N in module/entity finaltoplevel does not have driver. [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:7]
+WARNING: [Synth 8-3848] Net LSM303_INT1 in module/entity finaltoplevel does not have driver. [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:23]
+WARNING: [Synth 8-3848] Net LSM303_INT2 in module/entity finaltoplevel does not have driver. [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:24]
+WARNING: [Synth 8-7129] Port okHE[112] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[111] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[110] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[109] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[108] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[107] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[106] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[105] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[104] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[103] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[102] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[101] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[100] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[99] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[98] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[97] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[96] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[95] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[94] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[93] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[92] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[91] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[90] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[89] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[88] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[87] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[86] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[85] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[84] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[83] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[82] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[81] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[80] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[79] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[78] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[77] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[76] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[75] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[74] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[73] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[72] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[71] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[70] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[69] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[68] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[67] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[66] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[65] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[64] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[63] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[62] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[61] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[60] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[59] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[58] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[57] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[56] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[55] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[54] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[53] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[52] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[51] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[50] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[49] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[48] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[47] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[46] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[45] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[43] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[42] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[31] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[30] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[29] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[28] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[27] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[26] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[25] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[24] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[23] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[22] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[21] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[20] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[19] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[18] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[17] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[16] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[15] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[14] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[13] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[12] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[11] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[10] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[9] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[8] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[7] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[6] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[5] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[4] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[3] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[2] in module okWireOut is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2013.527 ; gain = 559.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2031.441 ; gain = 577.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2031.441 ; gain = 577.211
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2043.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'hostIF/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [u:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'FIFO_for_Counter_BTPipe_Interface'
+Finished Parsing XDC File [u:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'FIFO_for_Counter_BTPipe_Interface'
+Parsing XDC File [u:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [u:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [U:/Downloads/xem7310_v1.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [U:/Downloads/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [U:/Downloads/xem7310_v1.xdc:73]
+INFO: [Timing 38-2] Deriving generated clocks [U:/Downloads/xem7310_v1.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Downloads/xem7310_v1.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Downloads/xem7310_v1.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Downloads/xem7310_v1.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_P'. [U:/Downloads/xem7310_v1.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'CVM300-LVDS_CLK_P'. [U:/Downloads/xem7310_v1.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [U:/Downloads/xem7310_v1.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [U:/Downloads/xem7310_v1.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [U:/Downloads/xem7310_v1.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [U:/Downloads/xem7310_v1.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [U:/Downloads/xem7310_v1.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [U:/Downloads/xem7310_v1.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [U:/Downloads/xem7310_v1.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [U:/Downloads/xem7310_v1.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [U:/Downloads/xem7310_v1.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [U:/Downloads/xem7310_v1.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [U:/Downloads/xem7310_v1.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [U:/Downloads/xem7310_v1.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [U:/Downloads/xem7310_v1.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [U:/Downloads/xem7310_v1.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [U:/Downloads/xem7310_v1.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [U:/Downloads/xem7310_v1.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [U:/Downloads/xem7310_v1.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [U:/Downloads/xem7310_v1.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [U:/Downloads/xem7310_v1.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [U:/Downloads/xem7310_v1.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [U:/Downloads/xem7310_v1.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [U:/Downloads/xem7310_v1.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [U:/Downloads/xem7310_v1.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [U:/Downloads/xem7310_v1.xdc:274]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [U:/Downloads/xem7310_v1.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [U:/Downloads/xem7310_v1.xdc:277]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [U:/Downloads/xem7310_v1.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [U:/Downloads/xem7310_v1.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [U:/Downloads/xem7310_v1.xdc:282]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [U:/Downloads/xem7310_v1.xdc:283]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [U:/Downloads/xem7310_v1.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [U:/Downloads/xem7310_v1.xdc:286]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [U:/Downloads/xem7310_v1.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [U:/Downloads/xem7310_v1.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [U:/Downloads/xem7310_v1.xdc:291]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [U:/Downloads/xem7310_v1.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [U:/Downloads/xem7310_v1.xdc:294]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [U:/Downloads/xem7310_v1.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [U:/Downloads/xem7310_v1.xdc:327]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [U:/Downloads/xem7310_v1.xdc:328]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B2'. [U:/Downloads/xem7310_v1.xdc:330]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B2'. [U:/Downloads/xem7310_v1.xdc:331]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B3'. [U:/Downloads/xem7310_v1.xdc:333]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B3'. [U:/Downloads/xem7310_v1.xdc:334]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B4'. [U:/Downloads/xem7310_v1.xdc:336]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B4'. [U:/Downloads/xem7310_v1.xdc:337]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B7'. [U:/Downloads/xem7310_v1.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B7'. [U:/Downloads/xem7310_v1.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B8'. [U:/Downloads/xem7310_v1.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B8'. [U:/Downloads/xem7310_v1.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B9'. [U:/Downloads/xem7310_v1.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B9'. [U:/Downloads/xem7310_v1.xdc:346]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B10'. [U:/Downloads/xem7310_v1.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B10'. [U:/Downloads/xem7310_v1.xdc:349]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL_0'. [U:/Downloads/xem7310_v1.xdc:354]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL_0'. [U:/Downloads/xem7310_v1.xdc:355]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA_0'. [U:/Downloads/xem7310_v1.xdc:357]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA_0'. [U:/Downloads/xem7310_v1.xdc:358]
+WARNING: [Vivado 12-584] No ports matched 'ADT7420_A0'. [U:/Downloads/xem7310_v1.xdc:384]
+WARNING: [Vivado 12-584] No ports matched 'ADT7420_A0'. [U:/Downloads/xem7310_v1.xdc:385]
+WARNING: [Vivado 12-584] No ports matched 'ADT7420_A1'. [U:/Downloads/xem7310_v1.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'ADT7420_A1'. [U:/Downloads/xem7310_v1.xdc:388]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT2'. [U:/Downloads/xem7310_v1.xdc:410]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT2'. [U:/Downloads/xem7310_v1.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT1'. [U:/Downloads/xem7310_v1.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT1'. [U:/Downloads/xem7310_v1.xdc:414]
+WARNING: [Vivado 12-584] No ports matched 's_LED[0]'. [U:/Downloads/xem7310_v1.xdc:418]
+WARNING: [Vivado 12-584] No ports matched 's_LED[0]'. [U:/Downloads/xem7310_v1.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 's_LED[1]'. [U:/Downloads/xem7310_v1.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 's_LED[1]'. [U:/Downloads/xem7310_v1.xdc:422]
+WARNING: [Vivado 12-584] No ports matched 's_LED[2]'. [U:/Downloads/xem7310_v1.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 's_LED[2]'. [U:/Downloads/xem7310_v1.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 's_LED[3]'. [U:/Downloads/xem7310_v1.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 's_LED[3]'. [U:/Downloads/xem7310_v1.xdc:428]
+WARNING: [Vivado 12-584] No ports matched 'button[0]'. [U:/Downloads/xem7310_v1.xdc:432]
+WARNING: [Vivado 12-584] No ports matched 'button[0]'. [U:/Downloads/xem7310_v1.xdc:433]
+WARNING: [Vivado 12-584] No ports matched 'button[1]'. [U:/Downloads/xem7310_v1.xdc:435]
+WARNING: [Vivado 12-584] No ports matched 'button[1]'. [U:/Downloads/xem7310_v1.xdc:436]
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [U:/Downloads/xem7310_v1.xdc:438]
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [U:/Downloads/xem7310_v1.xdc:439]
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [U:/Downloads/xem7310_v1.xdc:441]
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [U:/Downloads/xem7310_v1.xdc:442]
+Finished Parsing XDC File [U:/Downloads/xem7310_v1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [U:/Downloads/xem7310_v1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/finaltoplevel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [U:/Downloads/xem7310_v1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/finaltoplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/finaltoplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2138.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 98 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IBUFGDS => IBUFDS: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2138.062 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'FIFO_for_Counter_BTPipe_Interface' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for FIFO_for_Counter_BTPipe_Interface. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_sample12. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'I2C_State_reg' in module 'I2C_Transmit'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'spi_toplevel'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'finaltoplevel'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                        000000000 |                        000000000
+               iSTATE108 |                        000000001 |                        000000001
+               iSTATE103 |                        000000010 |                        000000010
+               iSTATE101 |                        000000011 |                        000000011
+                iSTATE85 |                        000000100 |                        000000100
+                iSTATE83 |                        000000101 |                        000000101
+                iSTATE79 |                        000000110 |                        000000110
+                iSTATE76 |                        000000111 |                        000000111
+                iSTATE25 |                        000001000 |                        000001000
+                iSTATE22 |                        000001001 |                        000001001
+                iSTATE17 |                        000001010 |                        000001010
+                iSTATE15 |                        000001011 |                        000001011
+                 iSTATE5 |                        000001100 |                        000001100
+                 iSTATE2 |                        000001101 |                        000001101
+               iSTATE444 |                        000001110 |                        000001110
+               iSTATE442 |                        000001111 |                        000001111
+               iSTATE270 |                        000010000 |                        000010000
+               iSTATE269 |                        000010001 |                        000010001
+               iSTATE268 |                        000010010 |                        000010010
+               iSTATE267 |                        000010011 |                        000010011
+               iSTATE254 |                        000010100 |                        000010100
+               iSTATE253 |                        000010101 |                        000010101
+               iSTATE252 |                        000010110 |                        000010110
+               iSTATE251 |                        000010111 |                        000010111
+               iSTATE196 |                        000011000 |                        000011000
+               iSTATE195 |                        000011001 |                        000011001
+               iSTATE192 |                        000011010 |                        000011010
+               iSTATE191 |                        000011011 |                        000011011
+               iSTATE176 |                        000011100 |                        000011100
+               iSTATE175 |                        000011101 |                        000011101
+               iSTATE170 |                        000011110 |                        000011110
+               iSTATE169 |                        000011111 |                        000011111
+               iSTATE304 |                        000100000 |                        000100000
+               iSTATE301 |                        000100001 |                        000100001
+               iSTATE296 |                        000100010 |                        000100010
+               iSTATE294 |                        000100011 |                        000100011
+               iSTATE284 |                        000100100 |                        000100100
+               iSTATE281 |                        000100101 |                        000100101
+               iSTATE276 |                        000100110 |                        000100110
+               iSTATE274 |                        000100111 |                        000100111
+               iSTATE230 |                        000101000 |                        000101000
+               iSTATE227 |                        000101001 |                        000101001
+               iSTATE223 |                        000101010 |                        000101010
+               iSTATE220 |                        000101011 |                        000101011
+               iSTATE210 |                        000101100 |                        000101100
+               iSTATE207 |                        000101101 |                        000101101
+               iSTATE203 |                        000101110 |                        000101110
+               iSTATE200 |                        000101111 |                        000101111
+               iSTATE438 |                        000110000 |                        000110000
+               iSTATE437 |                        000110001 |                        000110001
+               iSTATE435 |                        000110010 |                        000110010
+               iSTATE433 |                        000110011 |                        000110011
+               iSTATE422 |                        000110100 |                        000110100
+               iSTATE421 |                        000110101 |                        000110101
+               iSTATE417 |                        000110110 |                        000110110
+               iSTATE415 |                        000110111 |                        000110111
+               iSTATE374 |                        000111000 |                        000111000
+               iSTATE373 |                        000111001 |                        000111001
+               iSTATE369 |                        000111010 |                        000111010
+               iSTATE366 |                        000111011 |                        000111011
+               iSTATE358 |                        000111100 |                        000111100
+               iSTATE357 |                        000111101 |                        000111101
+               iSTATE353 |                        000111110 |                        000111110
+               iSTATE350 |                        000111111 |                        000111111
+               iSTATE400 |                        001000000 |                        001000000
+               iSTATE399 |                        001000001 |                        001000001
+               iSTATE396 |                        001000010 |                        001000010
+               iSTATE394 |                        001000011 |                        001000011
+               iSTATE384 |                        001000100 |                        001000100
+               iSTATE382 |                        001000101 |                        001000101
+               iSTATE380 |                        001000110 |                        001000110
+               iSTATE378 |                        001000111 |                        001000111
+               iSTATE336 |                        001001000 |                        001001000
+               iSTATE334 |                        001001001 |                        001001001
+               iSTATE332 |                        001001010 |                        001001010
+               iSTATE128 |                        001001011 |                        001010000
+               iSTATE127 |                        001001100 |                        001010001
+               iSTATE122 |                        001001101 |                        001010010
+               iSTATE120 |                        001001110 |                        001010011
+               iSTATE107 |                        001001111 |                        001010100
+               iSTATE105 |                        001010000 |                        001010101
+                iSTATE98 |                        001010001 |                        001010110
+                iSTATE96 |                        001010010 |                        001010111
+                iSTATE43 |                        001010011 |                        001011000
+                iSTATE41 |                        001010100 |                        001011001
+                iSTATE35 |                        001010101 |                        001011010
+                iSTATE34 |                        001010110 |                        001011011
+                iSTATE24 |                        001010111 |                        001011100
+                iSTATE21 |                        001011000 |                        001011101
+                iSTATE16 |                        001011001 |                        001011110
+                iSTATE14 |                        001011010 |                        001011111
+               iSTATE153 |                        001011011 |                        001100000
+               iSTATE151 |                        001011100 |                        001100001
+               iSTATE148 |                        001011101 |                        001100010
+               iSTATE147 |                        001011110 |                        001100011
+               iSTATE137 |                        001011111 |                        001100100
+               iSTATE134 |                        001100000 |                        001100101
+               iSTATE132 |                        001100001 |                        001100110
+               iSTATE131 |                        001100010 |                        001100111
+                iSTATE73 |                        001100011 |                        001101000
+                iSTATE71 |                        001100100 |                        001101001
+                iSTATE69 |                        001100101 |                        001101010
+                iSTATE68 |                        001100110 |                        001101011
+                iSTATE53 |                        001100111 |                        001101100
+                iSTATE51 |                        001101000 |                        001101101
+                iSTATE49 |                        001101001 |                        001101110
+                iSTATE48 |                        001101010 |                        001101111
+               iSTATE318 |                        001101011 |                        001110000
+               iSTATE317 |                        001101100 |                        001110001
+               iSTATE315 |                        001101101 |                        001110010
+               iSTATE313 |                        001101110 |                        001110011
+               iSTATE303 |                        001101111 |                        001110100
+               iSTATE300 |                        001110000 |                        001110101
+               iSTATE295 |                        001110001 |                        001110110
+               iSTATE293 |                        001110010 |                        001110111
+               iSTATE248 |                        001110011 |                        001111000
+               iSTATE245 |                        001110100 |                        001111001
+               iSTATE240 |                        001110101 |                        001111010
+               iSTATE238 |                        001110110 |                        001111011
+               iSTATE229 |                        001110111 |                        001111100
+               iSTATE226 |                        001111000 |                        001111101
+               iSTATE221 |                        001111001 |                        001111110
+               iSTATE219 |                        001111010 |                        001111111
+               iSTATE420 |                        001111011 |                        010000000
+               iSTATE418 |                        001111100 |                        010000001
+               iSTATE414 |                        001111101 |                        010000010
+               iSTATE411 |                        001111110 |                        010000011
+               iSTATE404 |                        001111111 |                        010000100
+               iSTATE403 |                        010000000 |                        010000101
+               iSTATE398 |                        010000001 |                        010000110
+               iSTATE397 |                        010000010 |                        010000111
+               iSTATE356 |                        010000011 |                        010001000
+               iSTATE354 |                        010000100 |                        010001001
+               iSTATE348 |                        010000101 |                        010001010
+               iSTATE346 |                        010000110 |                        010001011
+               iSTATE340 |                        010000111 |                        010001100
+               iSTATE339 |                        010001000 |                        010001101
+               iSTATE335 |                        010001001 |                        010001110
+               iSTATE333 |                        010001010 |                        010001111
+               iSTATE146 |                        010001011 |                        010010000
+               iSTATE145 |                        010001100 |                        010010001
+               iSTATE144 |                        010001101 |                        010010010
+               iSTATE141 |                        010001110 |                        010010011
+               iSTATE130 |                        010001111 |                        010010100
+               iSTATE129 |                        010010000 |                        010010101
+               iSTATE126 |                        010010001 |                        010010110
+               iSTATE124 |                        010010010 |                        010010111
+                iSTATE67 |                        010010011 |                        010011000
+                iSTATE66 |                        010010100 |                        010011001
+                iSTATE61 |                        010010101 |                        010011010
+                iSTATE60 |                        010010110 |                        010011011
+                iSTATE47 |                        010010111 |                        010011100
+                iSTATE46 |                        010011000 |                        010011101
+                iSTATE42 |                        010011001 |                        010011110
+                iSTATE40 |                        010011010 |                        010011111
+               iSTATE174 |                        010011011 |                        010100000
+               iSTATE172 |                        010011100 |                        010100001
+               iSTATE168 |                        010011101 |                        010100010
+               iSTATE165 |                        010011110 |                        010100011
+               iSTATE156 |                        010011111 |                        010100100
+               iSTATE155 |                        010100000 |                        010100101
+               iSTATE150 |                        010100001 |                        010100110
+               iSTATE149 |                        010100010 |                        010100111
+               iSTATE102 |                        010100011 |                        010101000
+                iSTATE99 |                        010100100 |                        010101001
+                iSTATE93 |                        010100101 |                        010101010
+                iSTATE91 |                        010100110 |                        010101011
+                iSTATE78 |                        010100111 |                        010101100
+                iSTATE75 |                        010101000 |                        010101101
+                iSTATE72 |                        010101001 |                        010101110
+                iSTATE70 |                        010101010 |                        010101111
+               iSTATE331 |                        010101011 |                        010110000
+               iSTATE330 |                        010101100 |                        010110001
+               iSTATE329 |                        010101101 |                        010110010
+               iSTATE327 |                        010101110 |                        010110011
+               iSTATE319 |                        010101111 |                        010110100
+               iSTATE247 |                        010110000 |                        010111110
+               iSTATE244 |                        010110001 |                        010111111
+               iSTATE298 |                        010110010 |                        011000000
+               iSTATE297 |                        010110011 |                        011000001
+               iSTATE292 |                        010110100 |                        011000010
+               iSTATE290 |                        010110101 |                        011000011
+               iSTATE278 |                        010110110 |                        011000100
+               iSTATE277 |                        010110111 |                        011000101
+               iSTATE272 |                        010111000 |                        011000110
+               iSTATE271 |                        010111001 |                        011000111
+               iSTATE224 |                        010111010 |                        011001000
+               iSTATE222 |                        010111011 |                        011001001
+               iSTATE218 |                        010111100 |                        011001010
+               iSTATE217 |                        010111101 |                        011001011
+               iSTATE204 |                        010111110 |                        011001100
+               iSTATE202 |                        010111111 |                        011001101
+               iSTATE198 |                        011000000 |                        011001110
+               iSTATE197 |                        011000001 |                        011001111
+               iSTATE436 |                        011000010 |                        011010000
+               iSTATE434 |                        011000011 |                        011010001
+               iSTATE431 |                        011000100 |                        011010010
+               iSTATE428 |                        011000101 |                        011010011
+               iSTATE419 |                        011000110 |                        011010100
+               iSTATE416 |                        011000111 |                        011010101
+               iSTATE412 |                        011001000 |                        011010110
+               iSTATE409 |                        011001001 |                        011010111
+               iSTATE370 |                        011001010 |                        011011000
+               iSTATE368 |                        011001011 |                        011011001
+               iSTATE362 |                        011001100 |                        011011010
+               iSTATE361 |                        011001101 |                        011011011
+               iSTATE355 |                        011001110 |                        011011100
+               iSTATE352 |                        011001111 |                        011011101
+               iSTATE347 |                        011010000 |                        011011110
+               iSTATE345 |                        011010001 |                        011011111
+                iSTATE19 |                        011010010 |                        011100000
+                iSTATE18 |                        011010011 |                        011100001
+                iSTATE13 |                        011010100 |                        011100010
+                iSTATE11 |                        011010101 |                        011100011
+                  iSTATE |                        011010110 |                        011100100
+               iSTATE445 |                        011010111 |                        011100101
+               iSTATE440 |                        011011000 |                        011100110
+               iSTATE439 |                        011011001 |                        011100111
+               iSTATE395 |                        011011010 |                        011101000
+               iSTATE393 |                        011011011 |                        011101001
+               iSTATE392 |                        011011100 |                        011101010
+               iSTATE391 |                        011011101 |                        011101011
+               iSTATE379 |                        011011110 |                        011101100
+               iSTATE377 |                        011011111 |                        011101101
+               iSTATE376 |                        011100000 |                        011101110
+               iSTATE375 |                        011100001 |                        011101111
+               iSTATE194 |                        011100010 |                        011110000
+               iSTATE193 |                        011100011 |                        011110001
+               iSTATE189 |                        011100100 |                        011110010
+               iSTATE186 |                        011100101 |                        011110011
+               iSTATE173 |                        011100110 |                        011110100
+               iSTATE171 |                        011100111 |                        011110101
+               iSTATE166 |                        011101000 |                        011110110
+               iSTATE163 |                        011101001 |                        011110111
+               iSTATE121 |                        011101010 |                        011111000
+               iSTATE119 |                        011101011 |                        011111001
+               iSTATE114 |                        011101100 |                        011111010
+               iSTATE113 |                        011101101 |                        011111011
+               iSTATE100 |                        011101110 |                        011111100
+                iSTATE97 |                        011101111 |                        011111101
+                iSTATE92 |                        011110000 |                        011111110
+                iSTATE90 |                        011110001 |                        011111111
+                iSTATE65 |                        011110010 |                        100000000
+                iSTATE64 |                        011110011 |                        100000001
+                iSTATE59 |                        011110100 |                        100000010
+                iSTATE56 |                        011110101 |                        100000011
+                iSTATE45 |                        011110110 |                        100000100
+                iSTATE44 |                        011110111 |                        100000101
+                iSTATE38 |                        011111000 |                        100000110
+                iSTATE36 |                        011111001 |                        100000111
+               iSTATE432 |                        011111010 |                        100001000
+               iSTATE430 |                        011111011 |                        100001001
+               iSTATE426 |                        011111100 |                        100001010
+               iSTATE425 |                        011111101 |                        100001011
+               iSTATE413 |                        011111110 |                        100001100
+               iSTATE410 |                        011111111 |                        100001101
+               iSTATE408 |                        100000000 |                        100001110
+               iSTATE407 |                        100000001 |                        100001111
+               iSTATE236 |                        100000010 |                        100010000
+               iSTATE235 |                        100000011 |                        100010001
+               iSTATE233 |                        100000100 |                        100010010
+               iSTATE231 |                        100000101 |                        100010011
+               iSTATE216 |                        100000110 |                        100010100
+               iSTATE215 |                        100000111 |                        100010101
+               iSTATE213 |                        100001000 |                        100010110
+               iSTATE211 |                        100001001 |                        100010111
+               iSTATE158 |                        100001010 |                        100011000
+               iSTATE157 |                        100001011 |                        100011001
+               iSTATE154 |                        100001100 |                        100011010
+               iSTATE152 |                        100001101 |                        100011011
+               iSTATE143 |                        100001110 |                        100011100
+               iSTATE140 |                        100001111 |                        100011101
+               iSTATE138 |                        100010000 |                        100011110
+               iSTATE135 |                        100010001 |                        100011111
+               iSTATE266 |                        100010010 |                        100100000
+               iSTATE265 |                        100010011 |                        100100001
+               iSTATE260 |                        100010100 |                        100100010
+               iSTATE259 |                        100010101 |                        100100011
+               iSTATE250 |                        100010110 |                        100100100
+               iSTATE249 |                        100010111 |                        100100101
+               iSTATE242 |                        100011000 |                        100100110
+               iSTATE241 |                        100011001 |                        100100111
+               iSTATE190 |                        100011010 |                        100101000
+               iSTATE188 |                        100011011 |                        100101001
+               iSTATE182 |                        100011100 |                        100101010
+               iSTATE181 |                        100011101 |                        100101011
+               iSTATE167 |                        100011110 |                        100101100
+               iSTATE164 |                        100011111 |                        100101101
+               iSTATE160 |                        100100000 |                        100101110
+               iSTATE159 |                        100100001 |                        100101111
+               iSTATE406 |                        100100010 |                        100110000
+               iSTATE405 |                        100100011 |                        100110001
+               iSTATE402 |                        100100100 |                        100110010
+               iSTATE401 |                        100100101 |                        100110011
+               iSTATE390 |                        100100110 |                        100110100
+               iSTATE389 |                        100100111 |                        100110101
+               iSTATE386 |                        100101000 |                        100110110
+               iSTATE385 |                        100101001 |                        100110111
+               iSTATE342 |                        100101010 |                        100111000
+               iSTATE341 |                        100101011 |                        100111001
+               iSTATE338 |                        100101100 |                        100111010
+               iSTATE337 |                        100101101 |                        100111011
+               iSTATE328 |                        100101110 |                        100111100
+               iSTATE326 |                        100101111 |                        100111101
+               iSTATE323 |                        100110000 |                        100111110
+               iSTATE322 |                        100110001 |                        100111111
+               iSTATE367 |                        100110010 |                        101000000
+               iSTATE365 |                        100110011 |                        101000001
+               iSTATE360 |                        100110100 |                        101000010
+               iSTATE359 |                        100110101 |                        101000011
+               iSTATE351 |                        100110110 |                        101000100
+               iSTATE349 |                        100110111 |                        101000101
+               iSTATE344 |                        100111000 |                        101000110
+               iSTATE343 |                        100111001 |                        101000111
+               iSTATE312 |                        100111010 |                        101001000
+               iSTATE311 |                        100111011 |                        101001001
+               iSTATE308 |                        100111100 |                        101001010
+               iSTATE307 |                        100111101 |                        101001011
+               iSTATE291 |                        100111110 |                        101001100
+               iSTATE289 |                        100111111 |                        101001101
+               iSTATE288 |                        101000000 |                        101001110
+               iSTATE287 |                        101000001 |                        101001111
+                iSTATE84 |                        101000010 |                        101010000
+                iSTATE82 |                        101000011 |                        101010001
+                iSTATE77 |                        101000100 |                        101010010
+                iSTATE74 |                        101000101 |                        101010011
+                iSTATE63 |                        101000110 |                        101010100
+                iSTATE62 |                        101000111 |                        101010101
+                iSTATE55 |                        101001000 |                        101010110
+                iSTATE54 |                        101001001 |                        101010111
+                 iSTATE4 |                        101001010 |                        101011000
+                 iSTATE1 |                        101001011 |                        101011001
+               iSTATE443 |                        101001100 |                        101011010
+               iSTATE441 |                        101001101 |                        101011011
+               iSTATE429 |                        101001110 |                        101011100
+               iSTATE427 |                        101001111 |                        101011101
+               iSTATE424 |                        101010000 |                        101011110
+               iSTATE423 |                        101010001 |                        101011111
+               iSTATE118 |                        101010010 |                        101100000
+               iSTATE116 |                        101010011 |                        101100001
+               iSTATE112 |                        101010100 |                        101100010
+               iSTATE111 |                        101010101 |                        101100011
+                iSTATE95 |                        101010110 |                        101100100
+                iSTATE94 |                        101010111 |                        101100101
+                iSTATE89 |                        101011000 |                        101100110
+                iSTATE88 |                        101011001 |                        101100111
+                iSTATE33 |                        101011010 |                        101101000
+                iSTATE31 |                        101011011 |                        101101001
+                iSTATE29 |                        101011100 |                        101101010
+                iSTATE28 |                        101011101 |                        101101011
+                iSTATE12 |                        101011110 |                        101101100
+                iSTATE10 |                        101011111 |                        101101101
+                 iSTATE9 |                        101100000 |                        101101110
+                 iSTATE8 |                        101100001 |                        101101111
+               iSTATE283 |                        101100010 |                        101110000
+               iSTATE280 |                        101100011 |                        101110001
+               iSTATE275 |                        101100100 |                        101110010
+               iSTATE273 |                        101100101 |                        101110011
+               iSTATE264 |                        101100110 |                        101110100
+               iSTATE263 |                        101100111 |                        101110101
+               iSTATE258 |                        101101000 |                        101110110
+               iSTATE257 |                        101101001 |                        101110111
+               iSTATE209 |                        101101010 |                        101111000
+               iSTATE206 |                        101101011 |                        101111001
+               iSTATE201 |                        101101100 |                        101111010
+               iSTATE199 |                        101101101 |                        101111011
+               iSTATE187 |                        101101110 |                        101111100
+               iSTATE185 |                        101101111 |                        101111101
+               iSTATE180 |                        101110000 |                        101111110
+               iSTATE179 |                        101110001 |                        101111111
+               iSTATE388 |                        101110010 |                        110000000
+               iSTATE387 |                        101110011 |                        110000001
+               iSTATE383 |                        101110100 |                        110000010
+               iSTATE381 |                        101110101 |                        110000011
+               iSTATE372 |                        101110110 |                        110000100
+               iSTATE371 |                        101110111 |                        110000101
+               iSTATE364 |                        101111000 |                        110000110
+               iSTATE363 |                        101111001 |                        110000111
+               iSTATE325 |                        101111010 |                        110001000
+               iSTATE324 |                        101111011 |                        110001001
+               iSTATE321 |                        101111100 |                        110001010
+               iSTATE320 |                        101111101 |                        110001011
+               iSTATE316 |                        101111110 |                        110001100
+               iSTATE314 |                        101111111 |                        110001101
+               iSTATE310 |                        110000000 |                        110001110
+               iSTATE309 |                        110000001 |                        110001111
+               iSTATE110 |                        110000010 |                        110010000
+               iSTATE109 |                        110000011 |                        110010001
+               iSTATE106 |                        110000100 |                        110010010
+               iSTATE104 |                        110000101 |                        110010011
+                iSTATE87 |                        110000110 |                        110010100
+                iSTATE86 |                        110000111 |                        110010101
+                iSTATE81 |                        110001000 |                        110010110
+                iSTATE80 |                        110001001 |                        110010111
+                iSTATE27 |                        110001010 |                        110011000
+                iSTATE26 |                        110001011 |                        110011001
+                iSTATE23 |                        110001100 |                        110011010
+                iSTATE20 |                        110001101 |                        110011011
+                 iSTATE7 |                        110001110 |                        110011100
+                 iSTATE6 |                        110001111 |                        110011101
+                 iSTATE3 |                        110010000 |                        110011110
+                 iSTATE0 |                        110010001 |                        110011111
+               iSTATE142 |                        110010010 |                        110100000
+               iSTATE139 |                        110010011 |                        110100001
+               iSTATE136 |                        110010100 |                        110100010
+               iSTATE133 |                        110010101 |                        110100011
+               iSTATE125 |                        110010110 |                        110100100
+               iSTATE123 |                        110010111 |                        110100101
+               iSTATE117 |                        110011000 |                        110100110
+               iSTATE115 |                        110011001 |                        110100111
+                iSTATE58 |                        110011010 |                        110101000
+                iSTATE57 |                        110011011 |                        110101001
+                iSTATE52 |                        110011100 |                        110101010
+                iSTATE50 |                        110011101 |                        110101011
+                iSTATE39 |                        110011110 |                        110101100
+                iSTATE37 |                        110011111 |                        110101101
+                iSTATE32 |                        110100000 |                        110101110
+                iSTATE30 |                        110100001 |                        110101111
+               iSTATE306 |                        110100010 |                        110110000
+               iSTATE305 |                        110100011 |                        110110001
+               iSTATE302 |                        110100100 |                        110110010
+               iSTATE299 |                        110100101 |                        110110011
+               iSTATE286 |                        110100110 |                        110110100
+               iSTATE285 |                        110100111 |                        110110101
+               iSTATE282 |                        110101000 |                        110110110
+               iSTATE279 |                        110101001 |                        110110111
+               iSTATE234 |                        110101010 |                        110111000
+               iSTATE232 |                        110101011 |                        110111001
+               iSTATE228 |                        110101100 |                        110111010
+               iSTATE225 |                        110101101 |                        110111011
+               iSTATE214 |                        110101110 |                        110111100
+               iSTATE212 |                        110101111 |                        110111101
+               iSTATE208 |                        110110000 |                        110111110
+               iSTATE205 |                        110110001 |                        110111111
+               iSTATE262 |                        110110010 |                        111000000
+               iSTATE261 |                        110110011 |                        111000001
+               iSTATE256 |                        110110100 |                        111000010
+               iSTATE255 |                        110110101 |                        111000011
+               iSTATE246 |                        110110110 |                        111000100
+               iSTATE243 |                        110110111 |                        111000101
+               iSTATE239 |                        110111000 |                        111000110
+               iSTATE237 |                        110111001 |                        111000111
+               iSTATE184 |                        110111010 |                        111001000
+               iSTATE183 |                        110111011 |                        111001001
+               iSTATE178 |                        110111100 |                        111001010
+               iSTATE177 |                        110111101 |                        111001011
+               iSTATE162 |                        110111110 |                        111001100
+               iSTATE161 |                        110111111 |                        111001101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'I2C_State_reg' using encoding 'sequential' in module 'I2C_Transmit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT | 0000000000000000000000000000000000000000000000000000000000000000000001 |                         00000000
+                iSTATE27 | 0000000000000000000000000000000000000000000000000000000000000000000010 |                         00000001
+                iSTATE33 | 0000000000000000000000000000000000000000000000000000000000000000000100 |                         01100100
+                iSTATE31 | 0000000000000000000000000000000000000000000000000000000000000000001000 |                         01100101
+                iSTATE29 | 0000000000000000000000000000000000000000000000000000000000000000010000 |                         01100110
+                iSTATE28 | 0000000000000000000000000000000000000000000000000000000000000000100000 |                         01100111
+                iSTATE63 | 0000000000000000000000000000000000000000000000000000000000000001000000 |                         01101000
+                iSTATE62 | 0000000000000000000000000000000000000000000000000000000000000010000000 |                         01101001
+                iSTATE59 | 0000000000000000000000000000000000000000000000000000000000000100000000 |                         01101010
+                iSTATE58 | 0000000000000000000000000000000000000000000000000000000000001000000000 |                         01101011
+                iSTATE49 | 0000000000000000000000000000000000000000000000000000000000010000000000 |                         01101100
+                iSTATE48 | 0000000000000000000000000000000000000000000000000000000000100000000000 |                         01101101
+                iSTATE45 | 0000000000000000000000000000000000000000000000000000000001000000000000 |                         01101110
+                iSTATE44 | 0000000000000000000000000000000000000000000000000000000010000000000000 |                         01101111
+                iSTATE66 | 0000000000000000000000000000000000000000000000000000000100000000000000 |                         01110000
+                iSTATE65 | 0000000000000000000000000000000000000000000000000000001000000000000000 |                         01110001
+                iSTATE61 | 0000000000000000000000000000000000000000000000000000010000000000000000 |                         01110010
+                iSTATE60 | 0000000000000000000000000000000000000000000000000000100000000000000000 |                         01110011
+                iSTATE53 | 0000000000000000000000000000000000000000000000000001000000000000000000 |                         01110100
+                iSTATE51 | 0000000000000000000000000000000000000000000000000010000000000000000000 |                         01110101
+                iSTATE47 | 0000000000000000000000000000000000000000000000000100000000000000000000 |                         01110110
+                iSTATE46 | 0000000000000000000000000000000000000000000000001000000000000000000000 |                         01110111
+                iSTATE20 | 0000000000000000000000000000000000000000000000010000000000000000000000 |                         01111000
+                iSTATE19 | 0000000000000000000000000000000000000000000000100000000000000000000000 |                         01111001
+                iSTATE18 | 0000000000000000000000000000000000000000000001000000000000000000000000 |                         01111010
+                iSTATE17 | 0000000000000000000000000000000000000000000010000000000000000000000000 |                         01111011
+                iSTATE10 | 0000000000000000000000000000000000000000000100000000000000000000000000 |                         01111100
+                 iSTATE8 | 0000000000000000000000000000000000000000001000000000000000000000000000 |                         01111101
+                 iSTATE6 | 0000000000000000000000000000000000000000010000000000000000000000000000 |                         01111110
+                 iSTATE5 | 0000000000000000000000000000000000000000100000000000000000000000000000 |                         01111111
+                iSTATE35 | 0000000000000000000000000000000000000001000000000000000000000000000000 |                         10000000
+                iSTATE34 | 0000000000000000000000000000000000000010000000000000000000000000000000 |                         10000001
+                iSTATE32 | 0000000000000000000000000000000000000100000000000000000000000000000000 |                         10000010
+                iSTATE30 | 0000000000000000000000000000000000001000000000000000000000000000000000 |                         10000011
+                iSTATE22 | 0000000000000000000000000000000000010000000000000000000000000000000000 |                         10000100
+                iSTATE21 | 0000000000000000000000000000000000100000000000000000000000000000000000 |                         10000101
+                iSTATE57 | 0000000000000000000000000000000001000000000000000000000000000000000000 |                         00011110
+                iSTATE56 | 0000000000000000000000000000000010000000000000000000000000000000000000 |                         00011111
+                iSTATE55 | 0000000000000000000000000000000100000000000000000000000000000000000000 |                         00100000
+                iSTATE54 | 0000000000000000000000000000001000000000000000000000000000000000000000 |                         00100001
+                iSTATE52 | 0000000000000000000000000000010000000000000000000000000000000000000000 |                         00100010
+                iSTATE50 | 0000000000000000000000000000100000000000000000000000000000000000000000 |                         00100011
+                iSTATE43 | 0000000000000000000000000001000000000000000000000000000000000000000000 |                         00100100
+                iSTATE42 | 0000000000000000000000000010000000000000000000000000000000000000000000 |                         00100101
+                iSTATE41 | 0000000000000000000000000100000000000000000000000000000000000000000000 |                         00100110
+                iSTATE40 | 0000000000000000000000001000000000000000000000000000000000000000000000 |                         00100111
+                iSTATE14 | 0000000000000000000000010000000000000000000000000000000000000000000000 |                         00101000
+                iSTATE13 | 0000000000000000000000100000000000000000000000000000000000000000000000 |                         00101001
+                 iSTATE9 | 0000000000000000000001000000000000000000000000000000000000000000000000 |                         00101010
+                 iSTATE7 | 0000000000000000000010000000000000000000000000000000000000000000000000 |                         00101011
+                 iSTATE2 | 0000000000000000000100000000000000000000000000000000000000000000000000 |                         00101100
+                 iSTATE1 | 0000000000000000001000000000000000000000000000000000000000000000000000 |                         00101101
+                iSTATE67 | 0000000000000000010000000000000000000000000000000000000000000000000000 |                         00101110
+                iSTATE64 | 0000000000000000100000000000000000000000000000000000000000000000000000 |                         00101111
+                iSTATE16 | 0000000000000001000000000000000000000000000000000000000000000000000000 |                         00110000
+                iSTATE15 | 0000000000000010000000000000000000000000000000000000000000000000000000 |                         00110001
+                iSTATE12 | 0000000000000100000000000000000000000000000000000000000000000000000000 |                         00110010
+                iSTATE11 | 0000000000001000000000000000000000000000000000000000000000000000000000 |                         00110011
+                 iSTATE4 | 0000000000010000000000000000000000000000000000000000000000000000000000 |                         00110100
+                 iSTATE3 | 0000000000100000000000000000000000000000000000000000000000000000000000 |                         00110101
+                 iSTATE0 | 0000000001000000000000000000000000000000000000000000000000000000000000 |                         00110110
+                  iSTATE | 0000000010000000000000000000000000000000000000000000000000000000000000 |                         00110111
+                iSTATE39 | 0000000100000000000000000000000000000000000000000000000000000000000000 |                         00111000
+                iSTATE38 | 0000001000000000000000000000000000000000000000000000000000000000000000 |                         00111001
+                iSTATE37 | 0000010000000000000000000000000000000000000000000000000000000000000000 |                         00111010
+                iSTATE36 | 0000100000000000000000000000000000000000000000000000000000000000000000 |                         00111011
+                iSTATE26 | 0001000000000000000000000000000000000000000000000000000000000000000000 |                         00111100
+                iSTATE25 | 0010000000000000000000000000000000000000000000000000000000000000000000 |                         00111101
+                iSTATE24 | 0100000000000000000000000000000000000000000000000000000000000000000000 |                         00111110
+                iSTATE23 | 1000000000000000000000000000000000000000000000000000000000000000000000 |                         00111111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'spi_toplevel'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                           000001 |                         00000000
+             STATE_RESET |                           000010 |                         00000001
+    STATE_RESET_FINISHED |                           000100 |                         00000011
+             STATE_DELAY |                           001000 |                         00000010
+         STATE_FRAME_REQ |                           010000 |                         00000100
+            STATE_FINISH |                           100000 |                         00000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'finaltoplevel'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[16]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[17]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[18]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[19]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[20]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[21]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[22]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[23]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[24]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[25]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[26]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[27]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[28]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[29]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[30]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[31]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[16]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[17]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[18]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[19]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[20]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[21]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[22]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[23]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[24]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[25]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[26]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[27]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[28]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[29]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[30]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[31]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__2.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[16]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[17]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[18]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[19]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[20]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[21]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[22]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[23]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[24]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[25]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[26]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[27]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[28]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[29]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[30]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[31]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[16]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[17]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[18]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[19]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[20]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[21]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[22]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[23]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[24]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[25]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[26]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[27]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[28]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[29]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[30]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[31]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__3.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__4.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__4.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__4.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__4.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.srcs/sources_1/new/finaltoplevel.v:323]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
+|2     |ila_0            |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |fifo_generator |     1|
+|2     |ila            |     1|
+|3     |BUFG           |     6|
+|4     |CARRY4         |    78|
+|5     |DNA_PORT       |     1|
+|6     |LUT1           |    64|
+|7     |LUT2           |   145|
+|8     |LUT3           |    68|
+|9     |LUT4           |   360|
+|10    |LUT5           |   199|
+|11    |LUT6           |   513|
+|13    |MMCME2_BASE    |     1|
+|14    |RAM128X1S      |     8|
+|15    |RAM32M         |     4|
+|16    |RAMB18E1       |     2|
+|18    |RAMB36E1       |     1|
+|19    |FDCE           |   230|
+|20    |FDPE           |    27|
+|21    |FDRE           |  1110|
+|22    |FDSE           |    24|
+|23    |IBUF           |    16|
+|24    |IBUFG          |     1|
+|25    |IBUFGDS        |     1|
+|26    |IOBUF          |    34|
+|27    |OBUF           |    19|
+|28    |OBUFT          |     3|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2138.062 ; gain = 683.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 665 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 2138.062 ; gain = 577.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:48 . Memory (MB): peak = 2138.062 ; gain = 683.832
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2138.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'hostIF/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2138.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 99 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IBUFGDS => IBUFDS: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 34 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Synth Design complete, checksum: b10b83ab
+INFO: [Common 17-83] Releasing license: Synthesis
+243 Infos, 322 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 2138.062 ; gain = 1081.391
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'U:/ECE-437-Final-Project-main/ECE-437-Final-Project-main/ECE 437 Final Project.runs/synth_1/finaltoplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finaltoplevel_utilization_synth.rpt -pb finaltoplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 17:01:31 2023...

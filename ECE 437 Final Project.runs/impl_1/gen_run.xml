@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1702076422">
+  <File Type="ROUTE-PWR" Name="finaltoplevel_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="finaltoplevel.tcl"/>
+  <File Type="BITSTR-MMI" Name="finaltoplevel.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="finaltoplevel_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="finaltoplevel_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="finaltoplevel_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="finaltoplevel_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="finaltoplevel_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="finaltoplevel_opt.dcp"/>
+  <File Type="OPT-DRC" Name="finaltoplevel_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="finaltoplevel.hwdef"/>
+  <File Type="PWROPT-DCP" Name="finaltoplevel_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="finaltoplevel_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="finaltoplevel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="finaltoplevel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="finaltoplevel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="finaltoplevel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="finaltoplevel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="finaltoplevel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="finaltoplevel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="finaltoplevel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="finaltoplevel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="finaltoplevel.bin"/>
+  <File Type="PLACE-TIMING" Name="finaltoplevel_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="finaltoplevel_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="finaltoplevel.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="finaltoplevel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="finaltoplevel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="finaltoplevel_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="finaltoplevel.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="finaltoplevel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="finaltoplevel_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="finaltoplevel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="finaltoplevel_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="finaltoplevel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="finaltoplevel_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="finaltoplevel_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="finaltoplevel_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="finaltoplevel_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="finaltoplevel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="finaltoplevel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="finaltoplevel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="finaltoplevel_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="finaltoplevel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="finaltoplevel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="finaltoplevel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="finaltoplevel_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="finaltoplevel_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="finaltoplevel_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="finaltoplevel_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="finaltoplevel_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="finaltoplevel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="finaltoplevel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="finaltoplevel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="finaltoplevel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="finaltoplevel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="finaltoplevel_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="finaltoplevel.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="finaltoplevel_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="finaltoplevel_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="finaltoplevel.nky"/>
+  <File Type="BITSTR-BMM" Name="finaltoplevel_bd.bmm"/>
+  <File Type="PDI-FILE" Name="finaltoplevel.pdi"/>
+  <File Type="RCFI_FILE" Name="finaltoplevel.rcfi"/>
+  <File Type="CFI_FILE" Name="finaltoplevel.cfi"/>
+  <File Type="RNPI_FILE" Name="finaltoplevel.rnpi"/>
+  <File Type="NPI_FILE" Name="finaltoplevel.npi"/>
+  <File Type="RBD_FILE" Name="finaltoplevel.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="finaltoplevel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="finaltoplevel.sysdef"/>
+  <File Type="BG-BGN" Name="finaltoplevel.bgn"/>
+  <File Type="BG-DRC" Name="finaltoplevel.drc"/>
+  <File Type="RDI-RDI" Name="finaltoplevel.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="finaltoplevel_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="finaltoplevel_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ClockGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/ClockGenerator.v"/>
+        <Attr Name="ImportTime" Val="1696011021"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ECE437/Lab 5 I2C/Lab 5.srcs/sources_1/imports/Downloads/I2C_Transmit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ECE437/Lab 5 I2C/Lab 5.srcs/sources_1/imports/Downloads/I2C_Transmit.v"/>
+        <Attr Name="ImportTime" Val="1697352858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okBTPipeOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okBTPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okCoreHarness.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okCoreHarness.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okLibrary.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okLibrary.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okTriggerIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okTriggerIn.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okWireIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okWireIn.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okWireOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okWireOut.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/spi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="//ad.uillinois.edu/engr-ews/adnanmc2/Downloads/spi.srcs/spi.srcs/sources_1/new/spi.v"/>
+        <Attr Name="ImportTime" Val="1699814295"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ECE437/Lab 7 Motor/Lab 5.srcs/sources_1/new/motor_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ECE437/Lab 7 Motor/Lab 5.srcs/sources_1/new/motor_controller.sv"/>
+        <Attr Name="ImportTime" Val="1698174766"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/finaltoplevel.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okLibrary.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okLibrary.vhd"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okTriggerOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okTriggerOut.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okBTPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okBTPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Vivado-2021/okRegisterBridge.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/Vivado-2021/okRegisterBridge.v"/>
+        <Attr Name="ImportTime" Val="1686667912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="finaltoplevel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Downloads/xem7310_v1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/finaltoplevel.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>
