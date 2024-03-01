@@ -4,7 +4,7 @@
 
 ![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.001.jpeg)
 
-Adnan Challawala Arnav Sheth
+Arnav Sheth
 
 **Introduction**
 
