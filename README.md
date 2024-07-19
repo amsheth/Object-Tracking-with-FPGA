@@ -26,7 +26,7 @@ Realtime tracking was enabled by the MedianFlow tracker in OpenCV using frames c
 
 The below diagram taken from the ECE 437 Canvas page for Lab 9 displays the hardware instantiated in Verilog for the transfer of CMV300 frames to Python.
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.002.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.002.jpeg)
 
 **Python and OpenCV tracking**
 
@@ -36,15 +36,15 @@ We used the OpenCV library in python to show and track an object. The tracking i
 
 The accuracy of mFlow tracker with respect to speed is given below. (Taken from Research Gate)
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.003.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.003.jpeg)
 
 The graph below shows the different tracking algorithm with its success rate (Taken from Research Gate).
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.004.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.004.jpeg)
 
 The FlowChart indicates how the trackers work on a high level. (Taken from https://www.scaler.com/topics/object-tracking-algorithms/)
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.005.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.005.jpeg)
 
 **Verilog**
 
@@ -54,17 +54,17 @@ We joined all our State machines from the I2C lab, motor controller and the SPI 
 
 Our Verilog state machines for I2C and SPI were based off the following references. I2C:
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.006.png)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.006.png)
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.007.png)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.007.png)
 
 Reading data
 
 SPI:
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.008.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.008.jpeg)
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.009.png)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.009.png)
 
 The standard deviation of the **acceleration sensor** readings were taken across 3 sets of 100 readings in order to derive the **sensor noise value**. Note that this value would vary across the different sensor boards in the lab and is dependent on temperature and other external factors as per the datasheet.
 
@@ -97,15 +97,15 @@ Temporal noise can be reduced with longer exposure times, frame stacking (for pi
 |**Standard deviation across pixels**|0\.49997449174806385|
 |**Signal to noise ratio (SNR)**|6\.94|
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.010.png)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.010.png)
 
 **Electrical characterization of the swivel motor**
 
 To understand the limitations of our swivel motor and understand the relationship **between motor voltage and linear acceleration of the tracking apparatus**, we used PyVISA to control a power supply and procure a plot for linearly increasing voltage versus the change in acceleration along the z-axis (since this is the plane within which the apparatus swivels. The plots below demonstrate the linear relationship between acceleration and the applied voltage.
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.011.png)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.011.png)
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.012.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.012.jpeg)
 
 **Conclusion**
 
