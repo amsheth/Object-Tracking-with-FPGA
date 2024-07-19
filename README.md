@@ -2,7 +2,7 @@
 
 **Realtime Object Tracking on an XEM7310 FPGA**
 
-![](Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.001.jpeg)
+![](readme_img/Aspose.Words.7bc2050c-ef57-4e5c-ad60-95a791bcd3d6.001.jpeg)
 
 Arnav Sheth
 
