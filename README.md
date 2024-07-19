@@ -1,4 +1,4 @@
-**ECE 437 Final Report**
+**Project Report**
 
 **Realtime Object Tracking on an XEM7310 FPGA**
 
