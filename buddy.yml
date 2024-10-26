@@ -1,5 +1,4 @@
-- name: Actions Status Discord           
-  uses: sarisia/actions-status-discord@v1
+- uses: sarisia/actions-status-discord@v1
   if: always()
   with:
-    webhook: ${{ https://discord.com/api/webhooks/1299564059305316412/4wdFdMYtCDNxmU_HOT5du6ygxika-4F-SvQW5_gq2EicfOkC_bJBxWIGO5OApNOkwpPh/github }}
+    webhook: ${{ https://discord.com/api/webhooks/1299564059305316412/4wdFdMYtCDNxmU_HOT5du6ygxika-4F-SvQW5_gq2EicfOkC_bJBxWIGO5OApNOkwpPh }}
