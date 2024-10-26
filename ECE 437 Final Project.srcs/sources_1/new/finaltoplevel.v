@@ -46,7 +46,7 @@ module finaltoplevel(
     wire TrigerEvent;
 
     // MAIN: WRITTEN TO BY CLOCK GENERATOR
-    wire ILA_Clk, ACK_bit, FSM_Clk;
+    wire ILA_Clk, ACK_bit, FSM_Clk,abcd;
     
     
     
